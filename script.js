@@ -6,7 +6,7 @@ if (yearSpan) {
 
 // Formulário rápido -> monta mensagem para WhatsApp
 const quickForm = document.getElementById("quick-form");
-const whatsappNumber = "5599999999999"; // Altere para o seu número com DDI + DDD
+const whatsappNumber = "5551997565042"; // Altere para o seu número com DDI + DDD
 
 if (quickForm) {
   quickForm.addEventListener("submit", (e) => {
