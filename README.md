@@ -63,8 +63,3 @@ Nenhuma. O projeto é puramente frontend e não depende de bibliotecas externas.
 ## 📄 Licença
 
 Este projeto está sob a [MIT License](LICENSE) — sinta-se livre para adaptar e reutilizar!
-
----
-
-> 💡 **Dica:** mantenha o design leve e limpo para garantir boa performance e carregamento rápido.
-
