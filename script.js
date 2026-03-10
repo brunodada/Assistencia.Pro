@@ -6,7 +6,7 @@ if (yearSpan) {
 
 // Formulário rápido -> monta mensagem para WhatsApp
 const quickForm = document.getElementById("quick-form");
-const whatsappNumber = "5551997565042"; // Altere para o seu número com DDI + DDD
+const whatsappNumber = "5599999999999"; // Altere para o seu número com DDI + DDD
 
 if (quickForm) {
   quickForm.addEventListener("submit", (e) => {
@@ -26,20 +26,38 @@ if (quickForm) {
   });
 }
 
-// Formulário de contato -> apenas exemplo simples (alert)
+// Formulário de contato -> envia para serviço de e-mail (Formspree)
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbdzgyla"; // troque pelo seu endpoint
+
 const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const nome = contactForm.nome.value.trim();
+    const formData = new FormData(contactForm);
 
-    alert(
-      `Obrigado, ${nome}! Recebemos sua mensagem e retornaremos em breve pelo WhatsApp ou e-mail.`
-    );
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Erro ao enviar formulário");
+        }
+        alert(
+          "Mensagem enviada com sucesso! Vamos responder em breve no seu e-mail."
+        );
+        contactForm.reset();
+      })
+      .catch(() => {
+        alert(
+          "Não foi possível enviar sua mensagem agora. Tente novamente em alguns instantes."
+        );
+      });
 
-    contactForm.reset();
   });
 }
-
