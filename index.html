@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistência Técnica Especializada</title>
+    <meta
+      name="description"
+      content="Assistência técnica especializada em manutenção de celulares, computadores e eletrônicos. Atendimento rápido, honesto e com garantia."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navegação simples -->
+    <header class="topbar">
+      <div class="container topbar-content">
+        <div class="logo">Assistência<span>Pro</span></div>
+        <nav class="nav">
+          <a href="#hero">Início</a>
+          <a href="#services">Serviços</a>
+          <a href="#testimonials">Depoimentos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Assistência técnica rápida e de confiança.</h1>
+          <p>
+            Conserto de celulares, computadores e eletrônicos com diagnóstico
+            transparente, peças de qualidade e garantia em todos os serviços.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Ver serviços</a>
+            <a
+              href="https://wa.me/5551997565042?text=Olá,%20gostaria%20de%20um%20orçamento."
+              target="_blank"
+              class="btn btn-outline"
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
+          <div class="hero-badges">
+            <span>✔ Diagnóstico rápido</span>
+            <span>✔ Peças com garantia</span>
+            <span>✔ Pagamento facilitado</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <h2>Agende seu conserto</h2>
+            <p>Descreva o problema e retornamos com um orçamento.</p>
+            <form id="quick-form">
+              <label>
+                Nome
+                <input type="text" name="nome" placeholder="Seu nome" required />
+              </label>
+              <label>
+                Tipo de equipamento
+                <input
+                  type="text"
+                  name="equipamento"
+                  placeholder="Ex: iPhone 12, Notebook Dell"
+                  required
+                />
+              </label>
+              <label>
+                Problema
+                <textarea
+                  name="problema"
+                  rows="3"
+                  placeholder="Ex: tela quebrada, não liga, esquentando..."
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary btn-full">
+                Pedir orçamento pelo WhatsApp
+              </button>
+              <small class="helper-text">
+                Você será direcionado para o nosso WhatsApp com os dados preenchidos.
+              </small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Serviços</h2>
+          <p>Especialistas em manutenção de celulares, notebooks e eletrônicos.</p>
+        </header>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Conserto de celulares</h3>
+            <p>Troca de tela, bateria, conectores, câmeras e mais.</p>
+            <ul>
+              <li>Troca de tela e vidro</li>
+              <li>Substituição de bateria</li>
+              <li>Conector de carga e áudio</li>
+              <li>Resolução de travamentos</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Notebooks & PCs</h3>
+            <p>Manutenção completa para deixar seu computador como novo.</p>
+            <ul>
+              <li>Formatação e backup</li>
+              <li>Upgrade de SSD e memória</li>
+              <li>Limpeza interna e troca de pasta térmica</li>
+              <li>Remoção de vírus e lentidão</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Outros eletrônicos</h3>
+            <p>Conserto de videogames, TVs e outros dispositivos.</p>
+            <ul>
+              <li>Consoles (PlayStation, Xbox, etc.)</li>
+              <li>Smart TVs e monitores</li>
+              <li>Fontes e acessórios</li>
+              <li>Orçamento sob análise</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Depoimentos</h2>
+          <p>Veja o que nossos clientes dizem.</p>
+        </header>
+        <div class="testimonials-grid">
+          <figure class="testimonial">
+            <blockquote>
+              Atendimento excelente! Meu celular ficou pronto no mesmo dia e com
+              garantia.
+            </blockquote>
+            <figcaption>Maria Silva</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              Meu notebook estava muito lento, depois da manutenção voltou a ser
+              rápido como novo.
+            </blockquote>
+            <figcaption>João Pereira</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              Fui muito bem atendido, explicaram todo o processo e o orçamento foi
+              justo.
+            </blockquote>
+            <figcaption>Carlos Souza</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <header class="section-header section-header-left">
+            <h2>Contato</h2>
+            <p>Fale com a nossa equipe e tire suas dúvidas.</p>
+          </header>
+          <ul class="contact-list">
+            <li><strong>Telefone:</strong> (51) 99756-5042</li>
+            <li><strong>WhatsApp:</strong> (51) 99756-5042</li>
+            <li><strong>E-mail:</strong> contato@assistenciapro.com</li>
+            <li><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</li>
+            <li><strong>Horário:</strong> Seg a Sex, 9h às 18h</li>
+          </ul>
+        </div>
+        <div>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Nome
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
+            </label>
+            <label>
+              Mensagem
+              <textarea
+                name="mensagem"
+                rows="4"
+                placeholder="Como podemos ajudar?"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">
+              Enviar mensagem
+            </button>
+            <small class="helper-text">
+              Retornamos o mais rápido possível pelo WhatsApp ou e-mail.
+            </small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <span>© <span id="year"></span> AssistênciaPro. Todos os direitos reservados.</span>
+        <span>Desenvolvido por Bruno Dada.</span>
+      </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a
+      href="https://wa.me/5551997565042?text=Olá,%20gostaria%20de%20um%20orçamento."
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Falar no WhatsApp"
+    >
+      <img
+        src="zapzap3.png"
+        alt="WhatsApp"
+        class="wa-icon"
+        loading="lazy"
+      />
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
